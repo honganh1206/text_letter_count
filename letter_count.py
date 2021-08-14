@@ -10,7 +10,7 @@ def main():
 
 def read_data():
     word_dict = {}
-    file = Path('insert Path to file here.txt').read_text(encoding="utf8")
+    file = Path('filename.txt').read_text(encoding="utf8")
     for char in file:                                  
         word_dict.setdefault(char, 0) 
         word_dict[char] += 1                               
